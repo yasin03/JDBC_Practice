@@ -39,7 +39,7 @@ public class P3_DDL {
 
         // SORU : markalar tablosuna yeni bir sutun {sube_sayisi int} ekleyiniz
 
-        // SORU : markalar tablosuna yeni bir sutun {sube_sayisi int} ekleyiniz, ancak bu sutunun yeri marka_id den sonra olsub
+        // SORU : markalar tablosuna yeni bir sutun {sube_sayisi int} ekleyiniz, ancak bu sutunun yeri marka_id den sonra olsun
 
         // SORU : markalar tablosunun adini  brands olarak degistiriniz
 
