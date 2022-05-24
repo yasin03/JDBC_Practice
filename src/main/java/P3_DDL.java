@@ -45,7 +45,7 @@ public class P3_DDL {
 
         // SORU : markalar tablosunda marka_isim sutununu isim olarak degistiriniz
 
-        //  SORU : markalar tablosunda marka_isim sutununun data type ini char(20) olarak degistiriniz
+        // SORU : markalar tablosunda marka_isim sutununun data type ini char(20) olarak degistiriniz
 
 
 }
