@@ -17,9 +17,9 @@ public class DBUtils {
     //Bu method u data cok BeforeMethod icinde setup icin kullanacagiz
     public static void createConnection() {
 
-        String url="jdbc:mysql://184.168.194.58:1433;databaseName=kaolapalacedb;user=manager;password=Manager1!";
-        String username="manager";
-        String password="Manager1!";
+        String url="jdbc:mysql://184.168.194.58:1433;databaseName=kaolapalacedb;user=kullanici adiniz;password=sifreniz!";
+        String username="kullanici adiniz";
+        String password="sifreniz";
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {

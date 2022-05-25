@@ -8,7 +8,7 @@ public class P1_ReadData {
       //MySql de day3 de..
 
 
-    // SORU1: Talebeler tablosundan tum kayıtları listeleyiniz.
+    // SORU1: Talebeler tablosundan tum kayitları listeleyiniz.
 
     // SORU2: Talebeler tablosunda notları 90 uzeri olan kayitları listeleyiniz.
 
