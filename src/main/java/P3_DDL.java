@@ -24,28 +24,55 @@ public class P3_DDL {
                   executeUpdate()  DDL ----> 0           DML ----->etkilenen satir sayisini verir
              */
 
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.
+                getConnection("jdbc:mysql://localhost:3306/batch60_61", "root", "1234");
+
+        Statement st = con.createStatement();
 
         // SORU: markalar adında bir tablo oluşturunuz. marka_id int, marka_isim VARCHAR(15), calisan_sayisi int
 
         //1.yontem : execute () methodu ile
 
-
-      // execute(), Boolean bir deger dondurur.
-      //- DDL islemlerin false dondururken(ResultSet olusturmadigi icin),  DML islemlerinde true deger dondurur.(ResultSet olusturur)
+        // String query1 = "create table markalar3 (marka_id int, marka_isim VARCHAR(15), calisan_sayisi int)";
+        // boolean bl = st.execute(query1);
+        // System.out.println("Tablo oluşturuldu -> "+bl);
+        // execute(), Boolean bir deger dondurur.
+        //- DDL islemlerin false dondururken(ResultSet olusturmadigi icin),  DML islemlerinde true deger dondurur.(ResultSet olusturur)
 
         //2.yontem : executeUpdate() methodu ile
+        // int a = st.executeUpdate(query1);
+        // System.out.println("Markalar3 tablosu oluşturuldu -> "+a);
 
         // SORU: markalar tablosunu siliniz
+        // String query2 = "drop table markalar3";
+        // st.execute(query2);
+        // System.out.println("Markalar3 tablosu silindi...");
+
 
         // SORU : markalar tablosuna yeni bir sutun {sube_sayisi int} ekleyiniz
+        // String query3 =     "alter table markalar2 add sube_sayisi int";
+        // st.execute(query3);
 
         // SORU : markalar tablosuna yeni bir sutun {sube_sayisi int} ekleyiniz, ancak bu sutunun yeri marka_id den sonra olsun
+        // String query4="ALTER table markalar2 add sube_sayisi2 int after marka_id";
+        // st.execute(query4);
+
 
         // SORU : markalar tablosunun adini  brands olarak degistiriniz
+        // String query5="ALTER table markalar2 rename to brands";
+        // st.execute(query5);
 
         // SORU : markalar tablosunda marka_isim sutununu isim olarak degistiriniz
+        // String query6="ALTER table brands rename column sube_sayisi2 to sube2";
+        // st.execute(query6);
+
 
         // SORU : markalar tablosunda marka_isim sutununun data type ini char(20) olarak degistiriniz
+        String query6="ALTER table brands modify sube2 varchar(20)";
+        st.execute(query6);
 
+    }
 
 }
